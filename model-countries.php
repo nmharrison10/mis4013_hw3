@@ -2,7 +2,7 @@
 function selectCountries() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT country_id, country_name, capital FROM `country`")
+        $stmt = $conn->prepare("SELECT country_id, country_name, capital FROM `country`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
