@@ -26,6 +26,9 @@
           <a class="nav-link" href="drivers.php">Drivers</a>
         </li>
         <li class="nav-item">
+          <li class="nav-item">
+          <a class="nav-link" href="races.php">Races</a>
+        </li>
           <a class="nav-link" href="countries.php">Countries</a>
         </li>
         <li class="nav-item">
