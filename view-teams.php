@@ -6,6 +6,7 @@
       <th>ID</th>
       <th>Team Name</th>
       <th>Team Principal</th>
+        <th></th>
       </tr>
     </head>
     <body>
@@ -16,6 +17,7 @@ while ($team = $teams->fetch_assoc()) {
   <td><?php echo $team['team_id']?></td>
   <td><?php echo $team['team_name']?></td>
   <td><?php echo $team['principal']?></td>
+  <td><a href="drivers-by-team.php?id=<?php echo $team['team_id'];?>">Drivers</a></td>
 </tr>
 <?php
 }
