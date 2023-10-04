@@ -1,4 +1,4 @@
-<h1>Countries</h1>
+<h1>Teams</h1>
 <div class="table-responsive">
   <table class="table">
     <head>
@@ -23,5 +23,3 @@ while ($team = $teams->fetch_assoc()) {
     </body>
   </table>
 </div>
-<?php
-?>
