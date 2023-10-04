@@ -20,10 +20,10 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="countries.php">Countries</a>
+          <a class="nav-link" href="teams.php">Teams</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="drivers.php">Drivers</a>
+          <a class="nav-link" href="countries.php">Countries</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="teams-with-drivers.php">Teams with drivers</a>
