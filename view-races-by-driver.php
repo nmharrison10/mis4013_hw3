@@ -1,4 +1,4 @@
-<h1>Drivers by team</h1>
+<h1>Race wins by driver</h1>
 <div class="table-responsive">
   <table class="table">
     <head>
