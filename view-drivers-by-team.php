@@ -17,7 +17,7 @@
       <td><?php echo $driver['driver_id']?></td>
       <td><?php echo $driver['driver_name']?></td>
       <td><?php echo $driver['driver_age']?></td>
-      <td><?php echo $driver['c.country_name']?></td>
+      <td><?php echo $driver['country_name']?></td>
 </tr>
 <?php
 }
