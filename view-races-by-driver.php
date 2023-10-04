@@ -4,9 +4,9 @@
     <head>
       <tr>
       <th>ID</th>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Country</th>
+      <th>Track</th>
+      <th>Date</th>
+      <th>Winner</th>
       </tr>
     </head>
     <body>
