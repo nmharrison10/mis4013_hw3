@@ -29,7 +29,7 @@
           <a class="nav-link" href="countries.php">Countries</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="teams-with-drivers.php">Teams with drivers</a>
+          <a class="nav-link" href="countries-with-drivers.php">Countries with Drivers</a>
         </li>
       </ul>
     </div>
