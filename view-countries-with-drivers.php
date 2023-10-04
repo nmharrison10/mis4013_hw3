@@ -12,8 +12,7 @@ while ($country = $countries->fetch_assoc()) {
   $drivers=SelectDriversByCountry($country['country_id']);
   while($driver = $drivers->fetch_assoc()){
 ?>
-        <li class="list-group-item"><?php echo $driver['driver_id']; ?> - <?php echo $driver['driver_name']; ?></li>
-      <li class="list-group-item"><?php echo $driver['driver_age']; ?> - <?php echo $driver['team_name']; ?></li>
+        <li class="list-group-item"><?php echo $driver['driver_id']; ?> - <?php echo $driver['driver_name']; ?> - <?php echo $driver['driver_age']; ?> - <?php echo $driver['team_name']; ?></li>
 <?php
   }
 ?>
