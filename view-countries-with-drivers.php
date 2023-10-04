@@ -18,7 +18,7 @@ while ($country = $countries->fetch_assoc()) {
 ?>
             </ul>
             </p>
-            <p class="card-text"><small class="text-body-secondary"><td>Capital: <?php echo $country['capital']; ?></td>/small></p>
+            <p class="card-text"><small class="text-body-secondary">Capital: <?php echo $country['capital']; ?></small></p>
           </div>
         </div>
 <?php
