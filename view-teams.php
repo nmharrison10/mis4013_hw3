@@ -1,4 +1,4 @@
-<h1>Teams</h1>
+<h1>Formula 1 Teams</h1>
 <div class="table-responsive">
   <table class="table">
     <head>
