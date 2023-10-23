@@ -8,7 +8,6 @@ include "view-courses-newform.php";
 ?>
   </div>
 </div>
-<h1>Countries</h1>
 <div class="table-responsive">
   <table class="table">
     <head>
