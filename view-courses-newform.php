@@ -26,6 +26,7 @@
             <label for="capName" class="form-label">Country capital</label>
             <input type="text" class="form-control" id="capName" name="capName">
           </div>
+              <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
             </form>
         
