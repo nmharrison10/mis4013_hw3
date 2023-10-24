@@ -26,7 +26,7 @@ function insertTeam($teamName, $cid, $pName) {
     }
 }
 
-function updateCountry($teamName, $cid, $pName, $tid) {
+function updateTeam($teamName, $cid, $pName, $tid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `team` set `team_name` = ?, `country_id` = ?, `principal`=? where team_id = ?");
@@ -40,7 +40,7 @@ function updateCountry($teamName, $cid, $pName, $tid) {
     }
 }
 
-function deleteCountry($tid) {
+function deleteTeam($tid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from `team` where team_id = ?");
