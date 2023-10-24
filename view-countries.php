@@ -4,7 +4,7 @@
   </div>
   <div class="col-auto">
 <?php
-include "view-courses-newform.php";
+include "view-countries-newform.php";
 ?>
   </div>
 </div>
@@ -29,7 +29,7 @@ while ($country = $countries->fetch_assoc()) {
   <td><?php echo $country['capital']?></td>
   <td>
 <?php
-include "view-courses-editform.php";
+include "view-countries-editform.php";
 ?>
   
   </td>
