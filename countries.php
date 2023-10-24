@@ -9,7 +9,7 @@ if (isset($_POST['actionType'])){
 switch($_POST['actionType']){
   case "Add":
     if(insertCountry($_POST['cName'], $_POST['capName'])) {
-  echo '<div class="alert alert-success" role="alert">Course Added</div></br>';
+  echo '<div style="margin:15px" class="alert alert-success" role="alert">Course Added</div>';
     }
     else{
 echo '<div class="alert alert-danger" role="alert">Error.</div>"';
