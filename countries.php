@@ -4,6 +4,15 @@ require_once("model-countries.php");
 
 $pageTitle = "Countries";
 include "view-header.php";
+
+if (isset($_POST['actionType'])){
+switch($_POST['actionType']){
+  case "Add":
+    insertCountry($_POST['cName'], $_POST['capName']);
+  break;
+}
+}
+
 $countries = selectCountries();
 include "view-countries.php";
 include "view-footer.php";
