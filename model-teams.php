@@ -2,7 +2,7 @@
 function selectTeams() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT team_id, team_name, country_id, county_name, principal FROM team t join country c on t.country_id=c.country_id");
+        $stmt = $conn->prepare("SELECT team_id, team_name, t.country_id, county_name, principal FROM team t join country c on t.country_id=c.country_id");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
