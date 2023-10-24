@@ -17,7 +17,7 @@ echo '<div class="alert alert-danger" role="alert">Error.</div>"';
   break;
   case "Delete":
     if(deleteCountry($_POST['cid'])) {
-  echo '<div style="margin:15px" class="alert alert-success" role="alert">Country Deleted/div>';
+  echo '<div style="margin:15px" class="alert alert-success" role="alert">Country Deleted</div>';
     }
     else{
 echo '<div class="alert alert-danger" role="alert">Error.</div>"';
