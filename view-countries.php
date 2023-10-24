@@ -3,7 +3,7 @@
     <h1>Countries</h1>
   </div>
   <div class="col-auto">
-    <?php
+<?php
 include "view-courses-newform.php";
 ?>
   </div>
@@ -28,6 +28,12 @@ while ($country = $countries->fetch_assoc()) {
   <td><?php echo $country['country_name']?></td>
   <td><?php echo $country['capital']?></td>
   <td>
+<?php
+include "view-courses-editform.php";
+?>
+  
+  </td>
+  <td>
     <form method="post" action="">
       <input type="hidden" name="cid" value="<?php echo $country['country_id'];?>">
       <input type="hidden" name="actionType" value="Delete">
@@ -39,7 +45,6 @@ while ($country = $countries->fetch_assoc()) {
       </button>
     </form>
   </td>
-  <td></td>
 </tr>
 <?php
 }
