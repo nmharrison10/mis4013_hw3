@@ -2,7 +2,7 @@
 function selectDrivers() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT driver_id, driver_name, driver_age FROM `driver`");
+        $stmt = $conn->prepare("SELECT driver_id, driver_name, driver_age, team_id, country_id FROM `driver`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
