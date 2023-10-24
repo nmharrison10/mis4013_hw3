@@ -12,7 +12,7 @@ switch($_POST['actionType']){
   echo '<div style="margin:15px" class="alert alert-success" role="alert">Country Added</div>';
     }
     else{
-echo '<div class="alert alert-danger" role="alert">Error.</div>"';
+echo '<div class="alert alert-danger" role="alert">Error</div>"';
     }
   break;
   case "Delete":
@@ -20,7 +20,15 @@ echo '<div class="alert alert-danger" role="alert">Error.</div>"';
   echo '<div style="margin:15px" class="alert alert-success" role="alert">Country Deleted</div>';
     }
     else{
-echo '<div class="alert alert-danger" role="alert">Error.</div>"';
+echo '<div class="alert alert-danger" role="alert">Error</div>"';
+    }
+  break;
+  case "Edit":
+    if(updateCountry($_POST['cName'], $_POST['capName'], $_POST['cid'])) {
+  echo '<div style="margin:15px" class="alert alert-success" role="alert">Country Edited</div>';
+    }
+    else{
+echo '<div class="alert alert-danger" role="alert">Error</div>"';
     }
   break;
 }
