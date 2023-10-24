@@ -15,6 +15,7 @@ include "view-teams-newform.php";
       <tr>
       <th>ID</th>
       <th>Team Name</th>
+      <th>Country ID</th>
       <th>Country</th>
       <th>Team Principal</th>
         <th></th>
@@ -29,6 +30,7 @@ while ($team = $teams->fetch_assoc()) {
 <tr>
   <td><?php echo $team['team_id']?></td>
   <td><?php echo $team['team_name']?></td>
+  <td><?php echo $team['country_id']?></td>
   <td><?php echo $team['country_name']?></td>
   <td><?php echo $team['principal']?></td>
   <td>
