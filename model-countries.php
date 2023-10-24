@@ -30,7 +30,7 @@ function insertCountry($cName, $capName) {
 function updateCountry($cName, $capName, $cid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `country` set `country_name` = ?, `capital` = ?) where country_id = ?");
+        $stmt = $conn->prepare("UPDATE `country` set `country_name` = ?, `capital` = ? where country_id = ?");
         $stmt->bind_param("ssi", $cName, $capName, $cid);
         $success=$stmt->execute();
         $conn->close();
