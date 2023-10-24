@@ -23,7 +23,7 @@
           </div>
           <div class="mb-3">
             <label for="cid<?php echo $team['team_id'];?>" class="form-label">Country ID</label>
-            <input type="int" class="form-control" id="cid<?php echo $team['team_id'];?>" name="cid" value="<?php echo $team['country_id'];?>">
+            <input type="number" class="form-control" id="cid<?php echo $team['team_id'];?>" name="cid" value="<?php echo $team['country_id'];?>">
           </div>
 
           <div class="mb-3">
