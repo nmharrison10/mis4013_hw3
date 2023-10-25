@@ -4,7 +4,7 @@
 while ($country = $countries->fetch_assoc()) {
 ?>
       <div class="col">
-        <div class="card .h-100">
+        <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title"><?php echo $country['country_name']; ?></h5>
             <p class="card-text">
