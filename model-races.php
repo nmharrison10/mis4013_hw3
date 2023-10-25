@@ -2,7 +2,7 @@
 function selectRaces() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT race_id, track, date, d.driver_id, driver_name FROM race r join driver d on r.winning_driver_id=d.driver_id");
+        $stmt = $conn->prepare("SELECT race_id, track, date, winning_driver_id, driver_name FROM race r join driver d on r.winning_driver_id=d.driver_id");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
