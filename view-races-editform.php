@@ -28,7 +28,11 @@
 
           <div class="mb-3">
             <label for="did<?php echo $race['race_id'];?>" class="form-label">Winning Driver ID</label>
-            <input type="text" class="form-control" id="did<?php echo $race['race_id'];?>" name="did" value="<?php echo $race['winning_driver_id'];?>">
+<?php
+$driverList = selectDriversForInput();
+$selectedDriver = $race['winning_driver_id'];
+include "view-driver-input-list.php";
+            ?>
           </div>
               
               <input type="hidden" name="rid" value="<?php echo $race['race_id'];?>">
