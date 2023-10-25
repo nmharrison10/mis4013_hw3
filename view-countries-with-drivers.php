@@ -1,5 +1,5 @@
 <h1>Countries With Drivers</h1>
-      <div class="row row-col-1">
+      <div class="row row-cols-3">
 <?php           
 while ($country = $countries->fetch_assoc()) {
 ?>
