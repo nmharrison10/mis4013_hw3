@@ -35,7 +35,7 @@ while ($race = $races->fetch_assoc()) {
   ?>
   </td>
   <td>
-    form method="post" action="">
+    <form method="post" action="">
       <input type="hidden" name="rid" value="<?php echo $race['race_id'];?>">
       <input type="hidden" name="actionType" value="Delete">
       <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
