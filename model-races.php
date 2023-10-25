@@ -12,11 +12,11 @@ function selectRaces() {
         throw $e;
     }
 }
-function insertRace($did, $tid, $date) {
+function insertRace($did, $track, $date) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `race` (`winning_driver_id`, `track`, `date`) VALUES (?, ?, ?)");
-        $stmt->bind_param("sis", $did, $tid, $date);
+        $stmt->bind_param("iss", $did, $track, $date);
         $success=$stmt->execute();
         $conn->close();
         return $success;
@@ -26,11 +26,11 @@ function insertRace($did, $tid, $date) {
     }
 }
 
-function updateRace($did, $tid, $date, $rid) {
+function updateRace($did, $track, $date, $rid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `race` set `winning_driver_id` = ?, `track` = ?, `date`=? where race_id = ?");
-        $stmt->bind_param("issi", $did, $tid, $date, $rid);
+        $stmt->bind_param("issi", $did, $track, $date, $rid);
         $success=$stmt->execute();
         $conn->close();
         return $success;
