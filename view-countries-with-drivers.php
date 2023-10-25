@@ -1,10 +1,10 @@
 <h1>Countries With Drivers</h1>
-      <div class="row row-col-3">
+      <div class="row row-cols-3">
 <?php           
 while ($country = $countries->fetch_assoc()) {
 ?>
       <div class="col">
-        <div class="card">
+        <div class="card .h-100">
           <div class="card-body">
             <h5 class="card-title"><?php echo $country['country_name']; ?></h5>
             <p class="card-text">
