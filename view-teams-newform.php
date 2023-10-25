@@ -31,7 +31,7 @@ include "view-country-input-list.php";
 ?>
           </div>
           <div class="mb-3">
-            <label for="pName" class="form-label">Team Principal</label>
+            <label for="pName" class="form-label">Team Principal Name</label>
             <input type="text" class="form-control" id="pName" name="pName">
           </div>
               <input type="hidden" name="actionType" value="Add">
