@@ -22,12 +22,12 @@
             <input type="text" class="form-control" id="track<?php echo $race['race_id'];?>" name="track" value="<?php echo $race['track'];?>">
           </div>
           <div class="mb-3">
-            <label for="date<?php echo $race['race_id'];?>" class="form-label">Date (YYYY-MM-DD)</label>
+            <label for="date<?php echo $race['race_id'];?>" class="form-label">Date</label>
             <input type="date" class="form-control" id="date<?php echo $race['race_id'];?>" name="date" value="<?php echo $race['date'];?>">
           </div>
 
           <div class="mb-3">
-            <label for="did<?php echo $race['race_id'];?>" class="form-label">Winning Driver ID</label>
+            <label for="did<?php echo $race['race_id'];?>" class="form-label">Winning Driver</label>
 <?php
 $driverList = selectDriversForInput();
 $selectedDriver = $race['winning_driver_id'];
