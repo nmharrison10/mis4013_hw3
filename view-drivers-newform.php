@@ -19,11 +19,11 @@
 
             <form method="post" action="">
           <div class="mb-3">
-            <label for="dName" class="form-label">Driver Name</label>
+            <label for="dName" class="form-label">Name</label>
             <input type="text" class="form-control" id="dName" name="dName">
           </div>
           <div class="mb-3">
-            <label for="dAge" class="form-label">Driver Age</label>
+            <label for="dAge" class="form-label">Age</label>
             <input type="text" class="form-control" id="dAge" name="dAge">
           </div>
           <div class="mb-3">
