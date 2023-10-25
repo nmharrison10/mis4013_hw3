@@ -2,7 +2,7 @@
   <?php
 while ($driverItem = $driverList->fetch_assoc()) {
   $selText = "";
-  if ($selectedDriver == $driverItem['driver_id']{
+  if ($selectedDriver == $driverItem['driver_id']){
   $selText = " selected";
       }
   ?>
