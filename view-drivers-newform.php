@@ -27,7 +27,7 @@
             <input type="text" class="form-control" id="dAge" name="dAge">
           </div>
           <div class="mb-3">
-            <label for="cid" class="form-label">Driver Country ID</label>
+            <label for="cid" class="form-label">Country</label>
 <?php
 $countryList = selectCountriesForInput();
 $selectedCountry = 0;
@@ -35,8 +35,12 @@ include "view-country-input-list.php";
 ?>
           </div>
           <div class="mb-3">
-            <label for="tid" class="form-label">Team ID</label>
-            <input type="text" class="form-control" id="tid" name="tid">
+            <label for="tid" class="form-label">Team</label>
+<?php
+$teamList = selectTeamsForInput();
+$selectedTeam = 0;
+include "view-team-input-list.php";
+?>
           </div>
               <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
