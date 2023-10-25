@@ -12,6 +12,21 @@ function selectRaces() {
         throw $e;
     }
 }
+
+function selectDriversForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT driver_id, driver_name FROM driver order by driver_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function insertRace($did, $track, $date) {
     try {
         $conn = get_db_connection();
