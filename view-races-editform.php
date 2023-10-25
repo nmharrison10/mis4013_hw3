@@ -18,8 +18,8 @@
 
             <form method="post" action="">
           <div class="mb-3">
-            <label for="tid<?php echo $race['race_id'];?>" class="form-label">Track</label>
-            <input type="text" class="form-control" id="tid<?php echo $race['race_id'];?>" name="tid" value="<?php echo $race['track'];?>">
+            <label for="track<?php echo $race['race_id'];?>" class="form-label">Track</label>
+            <input type="text" class="form-control" id="track<?php echo $race['race_id'];?>" name="track" value="<?php echo $race['track'];?>">
           </div>
           <div class="mb-3">
             <label for="date<?php echo $race['race_id'];?>" class="form-label">Date (YYYY-MM-DD)</label>
