@@ -19,11 +19,11 @@
 
             <form method="post" action="">
           <div class="mb-3">
-            <label for="cName" class="form-label">Country name</label>
+            <label for="cName" class="form-label">Country Name</label>
             <input type="text" class="form-control" id="cName" name="cName">
           </div>
           <div class="mb-3">
-            <label for="capName" class="form-label">Country capital</label>
+            <label for="capName" class="form-label">Country Capital</label>
             <input type="text" class="form-control" id="capName" name="capName">
           </div>
               <input type="hidden" name="actionType" value="Add">
