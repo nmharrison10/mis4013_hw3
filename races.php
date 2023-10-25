@@ -8,7 +8,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])){
 switch($_POST['actionType']){
   case "Add":
-    if(insertRace($_POST['did'], $_POST['tid'],$_POST['date'])) {
+    if(insertRace($_POST['did'], $_POST['track'],$_POST['date'])) {
   echo '<div style="margin:15px" class="alert alert-success" role="alert">Race Added</div>';
     }
     else{
@@ -24,7 +24,7 @@ echo '<div class="alert alert-danger" role="alert">Error</div>"';
     }
   break;
   case "Edit":
-    if(updateRace($_POST['did'], $_POST['tid'], $_POST['date'],$_POST['rid'])) {
+    if(updateRace($_POST['did'], $_POST['track'], $_POST['date'],$_POST['rid'])) {
   echo '<div style="margin:15px" class="alert alert-success" role="alert">Race Edited</div>';
     }
     else{
