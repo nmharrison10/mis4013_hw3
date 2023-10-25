@@ -31,7 +31,7 @@
             <label for="pName<?php echo $driver['driver_id'];?>" class="form-label">Driver Country ID</label>
 <?php
 $countryList = selectCountriesForInput();
-$selectedCountry = $country['country_id'];
+$selectedCountry = $driver['country_id'];
 include "view-country-input-list.php";
 ?>
           </div>
