@@ -29,7 +29,11 @@
 
           <div class="mb-3">
             <label for="pName<?php echo $driver['driver_id'];?>" class="form-label">Driver Country ID</label>
-            <input type="text" class="form-control" id="cid<?php echo $driver['driver_id'];?>" name="cid" value="<?php echo $driver['country_id'];?>">
+<?php
+$countryList = selectCountriesForInput();
+$selectedCountry = $country['country_id'];
+include "view-country-input-list.php";
+?>
           </div>
 
         <div class="mb-3">
