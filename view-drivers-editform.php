@@ -18,17 +18,17 @@
 
             <form method="post" action="">
           <div class="mb-3">
-            <label for="dName<?php echo $driver['driver_id'];?>" class="form-label">Driver Name</label>
+            <label for="dName<?php echo $driver['driver_id'];?>" class="form-label">Name</label>
             <input type="text" class="form-control" id="dName<?php echo $driver['driver_id'];?>" name="dName" value="<?php echo $driver['driver_name'];?>">
           </div>
               
           <div class="mb-3">
-            <label for="cid<?php echo $driver['driver_id'];?>" class="form-label">Driver Age</label>
+            <label for="cid<?php echo $driver['driver_id'];?>" class="form-label">Age</label>
             <input type="text" class="form-control" id="dAge<?php echo $driver['driver_id'];?>" name="dAge" value="<?php echo $driver['driver_age'];?>">
           </div>
 
           <div class="mb-3">
-            <label for="pName<?php echo $driver['driver_id'];?>" class="form-label">Driver Country</label>
+            <label for="pName<?php echo $driver['driver_id'];?>" class="form-label">Country</label>
 <?php
 $countryList = selectCountriesForInput();
 $selectedCountry = $driver['country_id'];
@@ -37,7 +37,7 @@ include "view-country-input-list.php";
           </div>
 
         <div class="mb-3">
-            <label for="pName<?php echo $driver['driver_id'];?>" class="form-label">Driver Team</label>
+            <label for="pName<?php echo $driver['driver_id'];?>" class="form-label">Team</label>
 <?php
 $teamList = selectTeamsForInput();
 $selectedTeam = $driver['team_id'];
