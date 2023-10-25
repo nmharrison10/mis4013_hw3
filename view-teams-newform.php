@@ -23,11 +23,15 @@
             <input type="text" class="form-control" id="teamName" name="teamName">
           </div>
           <div class="mb-3">
-            <label for="capName" class="form-label">Country ID</label>
-            <input type="text" class="form-control" id="cid" name="cid">
+            <label for="capName" class="form-label">Country</label>
+            <?php
+$countryList = selectCountriesForInput();
+$selectedCountry = 0;
+include "view-country-input-list.php";
+?>
           </div>
           <div class="mb-3">
-            <label for="pName" class="form-label">Principal</label>
+            <label for="pName" class="form-label">Team Principal</label>
             <input type="text" class="form-control" id="pName" name="pName">
           </div>
               <input type="hidden" name="actionType" value="Add">
