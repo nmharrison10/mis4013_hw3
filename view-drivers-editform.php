@@ -28,7 +28,7 @@
           </div>
 
           <div class="mb-3">
-            <label for="pName<?php echo $driver['driver_id'];?>" class="form-label">Driver Country ID</label>
+            <label for="pName<?php echo $driver['driver_id'];?>" class="form-label">Driver Country</label>
 <?php
 $countryList = selectCountriesForInput();
 $selectedCountry = $driver['country_id'];
@@ -37,8 +37,12 @@ include "view-country-input-list.php";
           </div>
 
         <div class="mb-3">
-            <label for="pName<?php echo $driver['driver_id'];?>" class="form-label">Driver Team ID</label>
-            <input type="text" class="form-control" id="tid<?php echo $driver['driver_id'];?>" name="tid" value="<?php echo $driver['team_id'];?>">
+            <label for="pName<?php echo $driver['driver_id'];?>" class="form-label">Driver Team</label>
+<?php
+$teamList = selectTeamsForInput();
+$selectedTeam = $driver['team_id'];
+include "view-team-input-list.php";
+?>
           </div>
               
               <input type="hidden" name="did" value="<?php echo $driver['driver_id'];?>">
