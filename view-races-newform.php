@@ -19,8 +19,8 @@
 
       <form method="post" action="">
           <div class="mb-3">
-            <label for="tid" class="form-label">Track</label>
-            <input type="text" class="form-control" id="tid" name="tid">
+            <label for="track" class="form-label">Track</label>
+            <input type="text" class="form-control" id="track" name="track">
           </div>
           <div class="mb-3">
             <label for="date" class="form-label">Date</label>
