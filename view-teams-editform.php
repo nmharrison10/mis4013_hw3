@@ -18,12 +18,16 @@
 
             <form method="post" action="">
           <div class="mb-3">
-            <label for="teamName<?php echo $team['team_id'];?>" class="form-label">Team name</label>
+            <label for="teamName<?php echo $team['team_id'];?>" class="form-label">Team Name</label>
             <input type="text" class="form-control" id="teamName<?php echo $team['team_id'];?>" name="teamName" value="<?php echo $team['team_name'];?>">
           </div>
           <div class="mb-3">
-            <label for="cid<?php echo $team['team_id'];?>" class="form-label">Country ID</label>
-            <input type="text" class="form-control" id="cid<?php echo $team['team_id'];?>" name="cid" value="<?php echo $team['country_id'];?>">
+            <label for="cid<?php echo $team['team_id'];?>" class="form-label">Country</label>
+<?php
+$countryList = selectCountriesForInput();
+$selectedCountry = $team['country_id'];
+include "view-country-input-list.php";
+?>
           </div>
 
           <div class="mb-3">
