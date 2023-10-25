@@ -1,5 +1,5 @@
 <h1>Countries With Drivers</h1>
-      <div class="card-group">
+      <div class=""row row-cols-1 row-cols-md-3 g-4"">
 <?php           
 while ($country = $countries->fetch_assoc()) {
 ?>
