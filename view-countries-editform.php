@@ -18,11 +18,11 @@
 
             <form method="post" action="">
           <div class="mb-3">
-            <label for="cName<?php echo $country['country_id'];?>" class="form-label">Country name</label>
+            <label for="cName<?php echo $country['country_id'];?>" class="form-label">Country Name</label>
             <input type="text" class="form-control" id="cName<?php echo $country['country_id'];?>" name="cName" value="<?php echo $country['country_name'];?>">
           </div>
           <div class="mb-3">
-            <label for="capName<?php echo $country['country_id'];?>" class="form-label">Country capital</label>
+            <label for="capName<?php echo $country['country_id'];?>" class="form-label">Country Capital</label>
             <input type="text" class="form-control" id="capName<?php echo $country['country_id'];?>" name="capName" value="<?php echo $country['capital'];?>">
           </div>
               <input type="hidden" name="cid" value="<?php echo $country['country_id'];?>">
