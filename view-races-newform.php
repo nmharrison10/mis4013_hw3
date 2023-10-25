@@ -27,7 +27,7 @@
             <input type="date" class="form-control" id="date" name="date">
           </div>
           <div class="mb-3">
-            <label for="did" class="form-label">Winning Driver ID</label>
+            <label for="did" class="form-label">Winning Driver</label>
             <?php
 $driverList = selectDriversForInput();
 $selectedDriver = 0;
