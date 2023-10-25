@@ -28,7 +28,10 @@
           </div>
           <div class="mb-3">
             <label for="did" class="form-label">Winning Driver ID</label>
-            <input type="text" class="form-control" id="did" name="did">
+            <?php
+$driverList = selectDriverForInput();
+include "view-driver-input-list.php";
+            ?>
           </div>
               <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
