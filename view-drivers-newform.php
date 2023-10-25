@@ -28,7 +28,11 @@
           </div>
           <div class="mb-3">
             <label for="cid" class="form-label">Driver Country ID</label>
-            <input type="text" class="form-control" id="cid" name="cid">
+<?php
+$countryList = selectCountriesForInput();
+$selectedCountry = 0;
+include "view-country-input-list.php";
+?>
           </div>
           <div class="mb-3">
             <label for="tid" class="form-label">Team ID</label>
