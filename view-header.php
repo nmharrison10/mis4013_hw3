@@ -34,6 +34,9 @@
         <li class="nav-item">
           <a class="nav-link" href="countries-with-drivers.php">Countries with Drivers</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="races-chart.php">Races Chart</a>
+        </li>
       </ul>
     </div>
   </div>
