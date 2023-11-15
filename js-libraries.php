@@ -56,16 +56,12 @@
    <button type="button" class="btn btn-outline-primary" onclick="Swal.fire({
   icon: 'success',//success warning info question
   title: 'It worked!',
-  text: 'Something went wrong!',
+  text: 'This is a sweet alert!',
 })
      ">Click Me!</button>
     </div>
-  Swal.fire({
-  icon: 'success',//success warning info question
-  title: 'Oops...',
-  text: 'Something went wrong!',
-})
-    </div>
+      
+    <div id="ex2" style="border-style: solid; padding: 20px;margin: 10px;">
           <h2>Ex3: What Can JavaScript Do?</h2>
           
           <p id="demo3">JavaScript can change the style of an HTML element.</p>
