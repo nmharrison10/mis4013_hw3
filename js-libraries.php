@@ -103,6 +103,7 @@
             maxZoom: 19,
             attribution: ''
         } ).addTo( map );
+    }
 </script>
 </div>
 
