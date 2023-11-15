@@ -64,11 +64,10 @@
       
     <div id="ex2" style="border-style: solid; padding: 20px;margin: 10px;">
           <h2>Ex3: animejs</h2>
-          <div id="animediv" style="border-style:solid;border-width:5px;"></div>
+          <div id="animediv" style="border-style:solid;border-width:5px;height:20px;width:10px"></div>
           <button type="button" class="btn btn-outline-primary" id="animebtn">Click Me!</button>
 
-      <script>
-
+    <script>
     "use strict";
     document.querySelector("#animebtn").addEventListener("click",(e)=>{move();});
     
@@ -79,32 +78,40 @@
             translateX: 270
         } );
     }
-        
 </script>
     
     </div>
 
-    <div id="ex4" style="border-style: solid; padding: 20px;margin: 10px;">
+<div id="ex4" style="border-style: solid; padding: 20px;margin: 10px;">
  <h2>Ex4: What Can JavaScript Do?</h2>
+<!-- Create a <canvas> element -->
+<canvas id="granim-canvas"></canvas>
 
-<p>JavaScript can change HTML attribute values.</p>
+<!-- Call the script -->
+<script src="granim.min.js"></script>
 
+<!-- Create a Granim instance -->
+<script>
+var granimInstance = new Granim({
+   element: '#granim-canvas',
+   name: 'granim',
+   opacity: [1, 1],
+   states : {
+       "default-state": {
+           gradients: [
+               ['#834D9B', '#D04ED6'],
+               ['#1CD8D2', '#93EDC7']
+           ]
+       }
+   }
+});
+</script>
 <button class="btn btn-outline-primary" onclick="document.getElementById('myImage').src='maria-teneva-zK6JSL9lS3A-unsplash.jpg'">Normal day in OK</button>
-<img id="myImage" src="maria-teneva-zK6JSL9lS3A-unsplash.jpg" style="width:300px">
-<button class="btn btn-outline-primary" onclick="document.getElementById('myImage').src='pavel-roev-mfKbIbXa9BM-unsplash.jpg'">5 minutes later</button>
-    </div>
+</div>
 
     <div id="ex5" style="border-style: solid; padding: 20px;margin: 10px;">
-        <h2>Ex5: What Can JavaScript Do?</h2>
+        <h2>Bonus (kind of): Bootstap...</h2>
         
-        <p>JavaScript can show hidden HTML elements.</p>
-
-      <div id="flex" style="display:flex;flex-direction:row;">
-        <button type="button" class="btn btn-outline-primary" onmouseout="document.getElementById('demo5').style.display='none'"
-          onmouseover="document.getElementById('demo5').style.display='block'">Hover!</button>
-      
-        <p id="demo5" style="display:none;margin:5px;">Hi there!</p>
-      </div>
     </div>
       
     </div>
