@@ -14,7 +14,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.all.min.js"></script>
 
 <!-- animejs -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></scri
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<!-- leafletjs map -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.js"></script>
+  
   </head>
   <body>
     <div style="padding: 20px;">
@@ -83,30 +88,23 @@
     </div>
 
 <div id="ex4" style="border-style: solid; padding: 20px;margin: 10px;">
- <h2>Ex4: What Can JavaScript Do?</h2>
-<!-- Create a <canvas> element -->
-<canvas id="granim-canvas"></canvas>
+ <h2>Ex4: Leafletjs Map</h2>
+<button id="showmap" class="btn btn-sm btn-danger">Show Map</button>
 
-<!-- Call the script -->
-<script src="granim.min.js"></script>
+<div style="height: 100px;width: 200px" id="mapdiv"></div>
 
-<!-- Create a Granim instance -->
 <script>
-var granimInstance = new Granim({
-   element: '#granim-canvas',
-   name: 'granim',
-   opacity: [1, 1],
-   states : {
-       "default-state": {
-           gradients: [
-               ['#834D9B', '#D04ED6'],
-               ['#1CD8D2', '#93EDC7']
-           ]
-       }
-   }
-});
+    document.querySelector("#showmap").addEventListener("click",(e)=>{drawmap();});
+    function drawmap()
+    {
+        let map = L.map( 'mapdiv', { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 12 );
+        L.tileLayer( 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: ''
+        } ).addTo( map );
+    }
 </script>
-<button class="btn btn-outline-primary" onclick="document.getElementById('myImage').src='maria-teneva-zK6JSL9lS3A-unsplash.jpg'">Normal day in OK</button>
+<button class="btn btn-outline-primary" id="showmap">Click Me!</button>
 </div>
 
     <div id="ex5" style="border-style: solid; padding: 20px;margin: 10px;">
