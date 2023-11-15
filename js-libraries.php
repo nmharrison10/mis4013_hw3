@@ -64,7 +64,7 @@
       
     <div id="ex2" style="border-style: solid; padding: 20px;margin: 10px;">
           <h2>Ex3: animejs</h2>
-          <div id="animediv" style="border-style:solid;border-width:5px;height:20px;width:10px"></div>
+          <div id="animediv" style="border-style:solid;border-width:5px;height:20px;width:100px"></div>
           <button type="button" class="btn btn-outline-primary" id="animebtn">Click Me!</button>
 
     <script>
