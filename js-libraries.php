@@ -30,7 +30,7 @@
     <div id="ex1" style="border-style: solid; padding: 20px; margin: 10px; bs-border-radius: 0.375rem;">
           <h2>Ex1: chart.js </h2>
 <div>
-  <canvas style="width:200px;height:200px;" id="myChart"></canvas>
+  <canvas width="200" height="200" id="myChart"></canvas>
 </div>
 
 <script>
