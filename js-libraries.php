@@ -90,6 +90,8 @@
 <div id="ex4" style="border-style: solid; padding: 20px;margin: 10px;">
  <h2>Ex4: Leafletjs Map</h2>
 
+<button id="showmap" class="btn btn-outline-primary">Click Me!</button>
+
 <div style="height: 200px;width: 300px" id="mapdiv"></div>
 
 <script>
@@ -101,9 +103,7 @@
             maxZoom: 19,
             attribution: ''
         } ).addTo( map );
-    }
 </script>
-<button class="btn btn-outline-primary" id="showmap">Click Me!</button>
 </div>
 
     <div id="ex5" style="border-style: solid; padding: 20px;margin: 10px;">
