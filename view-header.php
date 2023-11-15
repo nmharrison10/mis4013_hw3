@@ -20,20 +20,7 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="teams.php">Teams</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="drivers.php">Drivers</a>
-        </li>
-        <li class="nav-item">
-          <li class="nav-item">
-          <a class="nav-link" href="races.php">Races</a>
-        </li>
-          <a class="nav-link" href="countries.php">Countries</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="countries-with-drivers.php">Countries with Drivers</a>
-        </li>
+          <a class="nav-link" href="teams.php">JS Libraries</a>
         <li class="nav-item">
           <a class="nav-link" href="races-chart.php">Races Chart</a>
         </li>
