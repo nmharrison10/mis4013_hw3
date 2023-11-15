@@ -13,7 +13,8 @@
     data: {
     datasets: [{
         data: [
-<?php while ($race = $races->fetch_assoc()) {
+<?php 
+while ($race = $races->fetch_assoc()) {
  echo $race[`Races_Won`].",";
 }
 ?>
@@ -25,7 +26,7 @@
 <?php 
 $races = selectRaces();
 while ($race = $races->fetch_assoc()) {
- echo "'".$race[`Races_Won`]."',";
+ echo "'".$race[`driver_name`]."',";
 }
 ?>
     ]
