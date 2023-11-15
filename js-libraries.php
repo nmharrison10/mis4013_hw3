@@ -69,7 +69,7 @@
       
     <div id="ex2" style="border-style: solid; padding: 20px;margin: 10px;">
           <h2>Ex3: animejs</h2>
-          <div id="animediv" style="border-style:solid;border-width:5px;height:20px;width:100px;margin:10px;"></div>
+          <div id="animediv" style="border-style:solid;border-width:5px;height:20px;width:100px;margin:20px;"></div>
           <button type="button" class="btn btn-outline-primary" id="animebtn">Click Me!</button>
 
     <script>
@@ -89,9 +89,8 @@
 
 <div id="ex4" style="border-style: solid; padding: 20px;margin: 10px;">
  <h2>Ex4: Leafletjs Map</h2>
-<button id="showmap" class="btn btn-sm btn-danger">Show Map</button>
 
-<div style="height: 100px;width: 200px" id="mapdiv"></div>
+<div style="height: 200px;width: 300px" id="mapdiv"></div>
 
 <script>
     document.querySelector("#showmap").addEventListener("click",(e)=>{drawmap();});
