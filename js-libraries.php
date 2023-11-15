@@ -6,14 +6,15 @@
     <link rel="icon" href="5-circle-fill.svg">
     <title>MIS 4013 HW6</title></title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
 
 <!-- sweetalert2 -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.min.css" rel="stylesheet"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.8.0/sweetalert2.all.min.js"></script>
 
-    
+<!-- animejs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></scri
   </head>
   <body>
     <div style="padding: 20px;">
@@ -62,11 +63,25 @@
     </div>
       
     <div id="ex2" style="border-style: solid; padding: 20px;margin: 10px;">
-          <h2>Ex3: What Can JavaScript Do?</h2>
-          
-          <p id="demo3">JavaScript can change the style of an HTML element.</p>
-          
-          <button type="button" class="btn btn-outline-primary" onclick="document.getElementById('demo3').style.fontSize='35px'">Click Me!</button>
+          <h2>Ex3: animejs</h2>
+          <div id="animediv" style="border-style:solid;border-width:5px;"></div>
+          <button type="button" class="btn btn-outline-primary" id="animebtn">Click Me!</button>
+
+      <script>
+
+    "use strict";
+    document.querySelector("#animebtn").addEventListener("click",(e)=>{move();});
+    
+    function move ()
+    {
+        anime( {
+            targets: document.querySelector( "#animediv" ),
+            translateX: 270
+        } );
+    }
+        
+</script>
+    
     </div>
 
     <div id="ex4" style="border-style: solid; padding: 20px;margin: 10px;">
